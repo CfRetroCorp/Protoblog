@@ -1,0 +1,31 @@
+
+<div class="contenu">
+<h1>Solicitations comics VO Octobre 2018</h1>
+<p>Bienvenue dans cette analyses des prochaines solicitations de comics pour les éditeurs Image, DC et Valiant !!
+Je vais présenter les séries qui pourraient être interessantes et celles qui restent à suivre !</p>
+
+<div>
+<h2>DC Comics</h2>
+
+<h3>The Books Of Magic</h3>
+<%= image_tag "1.jpg", alt: "Mon image", width: 150, height: 200 %>
+<p>Réinterprétation de cette série écrite à l'origine par Neil Gaiman.
+Elle prend, désormais, place dans l'univers de Sandman (du même auteur).
+Nous suivons la vie de Tim Hunter adolescent obnubilé par la magie.
+Si comme la série original, beaucoup verront des ressemblances avec Harry Potter,
+la trame de l'histoire est moins "héroique" et "fantastique" que les romans de J.K.Rowling.
+Editée par Vertigo, il faut s'attendre à une histoire plus mature. La question est: "Est-ce que ça sera aussi agréable
+à lire que la série original ?"
+<span class="info">(Tom Folley, Kat Howard, 24/10/2018, 3,99$)</span></p>
+</div>
+<div>
+  <h2>Commentaires</h2>
+
+  <%= form_tag '/comments', method: 'post' do %>
+  <input type="text" name="Nom" value="Nom"/><br/>
+  <textarea name="commentaires" rows="10" cols="80"></textarea><br/>
+  <input type="submit" value="Valider"/><br/>
+  <%end%>
+</div>
+
+</div>
